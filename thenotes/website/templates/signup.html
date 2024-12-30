@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+    <!-- id for components of form is optional rn 
+     but name is important for the backend-->
+    <h1 align="center">Sign Up Page</h1>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" name="email" id="email"
+        placeholder="Enter your email">
+
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter your first name.">
+    
+        <label for="password1">Enter your Password</label>
+        <input type="password" class="form-control" name="password1" id="password1" placeholder="Enter your Password.">
+    
+        <label for="password2">Confirm your Password</label>
+        <input type="password" class="form-control" name="password2" id="password2" placeholder="Confirm your Password.">
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+{% endblock %}
